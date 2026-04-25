@@ -125,26 +125,13 @@ button:hover {
 #battery,
 #backlight,
 #network,
-#bluetooth,
 #pulseaudio,
-#power-profiles-daemon,
-#custom-omarchy,
 #idle_inhibitor,
 #custom-idle-indicator,
-#custom-notification-silencing-indicator,
-#custom-updatespacman,
-#custom-screenrecording-indicator,
-#custom-update {
   min-width: 10px;
   padding: 0 4px;
   margin: 1px 1.5px 1px 1px;
 }
-
-#custom-omarchy {
-font-size: 14px;
-padding-left: 0px;
-}
-
 
 #custom-expand-icon {
   margin-right: 0px;
@@ -164,13 +151,6 @@ padding-left: 0px;
 
 tooltip {
   padding: 2px;
-}
-
-#power-profiles-daemon,
-#power-profiles-daemon.performance,
-#power-profiles-daemon.balanced,
-#power-profiles-daemon.power-saver {
-    margin: 0 4px;
 }
 
 .hidden {
@@ -224,32 +204,6 @@ tooltip label {
 
 /* Specific animation Module */
 
-
-#custom-screenrecording-indicator {
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  color: transparent;
-}
-
-#custom-screenrecording-indicator.active {
-  color: #eb7087;
-  animation-name: blink-recording;
-  animation-duration: 0.5s;
-}
-
-@keyframes blink-recording {
-    to {
-        color: @background;
-    }
-}
-
-@keyframes blink-inhibitor {
-    to {
-        color: @background;
-    }
-}
-
 #mpris {
 color: @foreground;
 animation: repeat;
@@ -276,16 +230,6 @@ animation: repeat;
     background-color: transparent;
     color: #f53c3c;
   }
-}
-
-#battery.critical:not(.charging) {
-  background-color: transparent;
-  color: #e6d8ba;
-  animation-name: blink2;
-  animation-duration: 0.5s;
-  animation-timing-function: steps(12);
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
 #clock {
