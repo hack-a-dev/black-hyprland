@@ -127,7 +127,7 @@ button:hover {
 #network,
 #pulseaudio,
 #idle_inhibitor,
-#custom-idle-indicator,
+#custom-idle-indicator {
   min-width: 10px;
   padding: 0 4px;
   margin: 1px 1.5px 1px 1px;
