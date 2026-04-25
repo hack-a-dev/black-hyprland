@@ -27,4 +27,4 @@ configuration{
     kb-mode-complete: "Control+o";
 }
 
-@theme "/home/gwallgof/.config/rofi/tokyonight.rasi"
+@theme "$HOME/.config/rofi/tokyonight.rasi"
